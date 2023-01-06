@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+.banner {
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: 0;
+    margin-top: 5%;
+    padding-top: 50%;
+    background-image: url('./images/banner-desktop/banner-bg.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+.banner-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-content-container {
+    position: relative;
+    width: 45%;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.banner-text {
+    font-family: 'Bungee', cursive;
+    font-size: 2em;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    color: #00488C;
+    text-shadow: 0px 4px 0px #FFFFFF;
+}
+
+.banner-follow-box {
+    position: relative;
+    margin-top: 5%;
+    padding: 16px 32px;
+    width: 80%;
+    border: 2px solid #18191F;
+    border-radius: 24px;
+    box-shadow: 0px 2px 0px #18191F;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #FF89BB;
+}
+
+.banner-follow-box-content {
+    position: relative;
+    width: 40%;
+    padding-right: 1%;
+    font-size: 0.8em;
+    color: #18191F;
+}
+
+.follow-box-input {
+    position: relative;
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 6px 6px 6px;
+    border: 2px solid #18191F;
+    border-radius: 16px;
+    background-color: #FFFFFF;
+}
+
+.follow-box-input-field {
+    position: relative;
+    display: block;
+    font-size: 1em;
+    width: 60%;
+    border: none;
+}
+
+.follow-box-btn {
+    width: 36%;
+    position: relative;
+    display: block;
+    background-color: #18191F;
+    font-size: 0.8em;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 16px 0 16px 0;
+    text-align: center;
+}
+
+.follow-box-input-field:focus {
+    border: none;
+}
+
+.banner-image-container {
+    position: relative;
+    width: 55%;
+    display: flex;
+    perspective: 100vw;
+}
+
+.banner-image-1 {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 64.69%;
+    background-image: url('./images/banner-desktop/banner-phone-big.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@keyframes flip {
+    0% {
+        transform: rotate3d(0, 1, 0, 35deg);
+    }
+
+    50% {
+        transform: rotate3d(0, 1, 0, -35deg);
+    }
+
+    100% {
+        transform: rotate3d(0, 1, 0, 35deg);
+    }
+}
+
+.banner-image-2 {
+    position: absolute;
+    width: 19.5%;
+    height: 0;
+    padding-top: 42%;
+    border-radius: 10px;
+    top: 10%;
+    left: 0;
+    background-image: url('./images/banner-desktop/banner-phone-1.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: flip;
+    animation-duration: 4s;
+    animation-direction: reverse;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.banner-image-3 {
+    position: absolute;
+    width: 22%;
+    height: 0;
+    padding-top: 48%;
+    border-radius: 10px;
+    top: 18%;
+    left: 41%;
+    background-image: url('./images/banner-desktop/banner-phone-2.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: flip;
+    animation-duration: 3s;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.banner-image-4 {
+    position: absolute;
+    width: 22%;
+    height: 0;
+    padding-top: 48%;
+    border-radius: 10px;
+    top: 0;
+    left: 63%;
+    background-image: url('./images/banner-desktop/banner-phone-3.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: flip;
+    animation-duration: 5s;
+    animation-direction: reverse;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}

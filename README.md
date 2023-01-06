@@ -1,1 +1,0 @@
-# daychun-lp
