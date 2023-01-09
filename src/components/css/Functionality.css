@@ -3,9 +3,310 @@
     display: block;
     width: 100vw;
     height: 0;
-    padding-top: 50%;
+    padding-top: 60%;
     background-image: url(./images/functionality-desktop/bg.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.functionality-container {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.function-list {
+    position: relative;
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.function-list-title {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Bungee', cursive;
+    font-size: 2.5em;
+    line-height: 1.5em;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 0px #00544A;
+}
+
+.function-item-container {
+    position: relative;
+    width: 60%;
+    background-color: #FFFFFF;
+    margin-top: 5%;
+    padding: 15px 30px;
+    border-radius: 30px;
+    border: 2px solid #18191F;
+    box-shadow: 0px 2px 0px #18191F;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.function-item-icon {
+    width: 20%;
+    padding-top: 20%;
+    height: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 5%;
+}
+
+#item-1 .function-item-icon {
+    background-image: url('./images/functionality-desktop/icon-1.png');
+}
+
+#item-2 .function-item-icon {
+    background-image: url('./images/functionality-desktop/icon-2.png');
+}
+
+#item-3 .function-item-icon {
+    background-image: url('./images/functionality-desktop/icon-3.png');
+}
+
+#item-4 .function-item-icon {
+    background-image: url('./images/functionality-desktop/icon-4.png');
+}
+
+.function-item-container.active {
+    width: 70%;
+}
+
+#item-1.active {
+    background-color: #FFBD12;
+}
+
+#item-1.active .function-item-icon {
+    background-image: url('./images/functionality-desktop/icon-1-active.png');
+}
+
+#item-2.active .function-item-icon {
+    background-image: url('./images/functionality-desktop/icon-2-active.png');
+}
+
+#item-3.active .function-item-icon {
+    background-image: url('./images/functionality-desktop/icon-3-active.png');
+}
+
+#item-4.active .function-item-icon {
+    background-image: url('./images/functionality-desktop/icon-4-active.png');
+}
+
+#item-2.active {
+    background-color: #8094FF;
+}
+
+#item-3.active {
+    background-color: #F95A2C;
+}
+
+#item-4.active {
+    background-color: #FF89BB;
+}
+
+.function-item-text {
+    color: #18191F;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.click-area {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.function-showcase {
+    width: 70%;
+}
+
+.function-showcase-container  {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.showcase-text-container {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.showcase-title {
+    font-family: 'Bungee';
+    font-size: 2em;
+    line-height: 1.3em;
+    color: #FFFFFF;
+    text-shadow: 0px 3px 0px #000000;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000000;
+}
+
+.showcase-subtitle {
+    font-family: 'Bungee';
+    font-size: 1.5em;
+    line-height: 1.2em;
+    margin-bottom: 3%;
+    text-shadow: 0px 3px 0px #000000;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000000;
+}
+
+.showcase-content {
+    font-family: 'Montserrat';
+    font-size: 0.9em;
+    color: #006054;
+}
+
+.showcase-img {
+    width: 50%;
+    height: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#showcase-0 .showcase-title {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 0px #00544A;
+}
+
+#showcase-0 .showcase-img {
+    padding-top: 50%;
+    background-image: url(./images/functionality-desktop/function-main-img.png);
+}
+
+#showcase-1.function-showcase-container {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+#showcase-1 .showcase-text-container {
+    width: 60%;
+}
+
+#showcase-1 .showcase-subtitle {
+    color: #FFD465;
+}
+
+#showcase-1 .showcase-content {
+    width: 85%;
+}
+
+#showcase-1 .showcase-img {
+    width: 35%;
+    padding-top: 50%;
+    background-image: url(./images/functionality-desktop/function-1-img.png);
+}
+
+#showcase-2 .showcase-text-container {
+    width: 50%;
+    align-self: flex-end;
+}
+
+#showcase-2 .showcase-title {
+    color: #8094FF;
+    font-size: 1.5em;
+    line-height: 1.2em;
+}
+
+#showcase-2 .showcase-subtitle {
+    color: #FFFFFF;
+    font-size: 2em;
+    line-height: 1.3em;
+}
+
+#showcase-2 .showcase-content {
+    width: 85%;
+}
+
+#showcase-2 .showcase-img {
+    width: 60%;
+    margin-left: -10%;
+    padding-top: 50%;
+    background-image: url(./images/functionality-desktop/function-2-img.png);
+}
+
+#showcase-3.function-showcase-container {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+#showcase-3 .showcase-text-container {
+    width: 60%;
+}
+
+#showcase-3 .showcase-title {
+    white-space: pre-wrap;
+}
+
+#showcase-3 .showcase-subtitle {
+    color: #F95A2C;
+    white-space: pre-wrap;
+}
+
+#showcase-3 .showcase-content {
+    width: 85%;
+}
+
+#showcase-3 .showcase-img {
+    width: 35%;
+    padding-top: 50%;
+    background-image: url(./images/functionality-desktop/function-3-img.png);
+}
+
+#showcase-4.function-showcase-container {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+#showcase-4 .showcase-text-container {
+    width: 50%;
+    padding-top: 15%;
+    margin-left: -10%;
+}
+
+#showcase-4 .showcase-subtitle {
+    color: #FF89BB;
+}
+
+#showcase-4 .showcase-content {
+    width: 85%;
+}
+
+#showcase-4 .showcase-img {
+    width: 60%;
+    padding-top: 50%;
+    background-image: url(./images/functionality-desktop/function-4-img.png);
 }

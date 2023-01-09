@@ -9,3 +9,84 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.follow-container {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.follow-title {
+    position: relative;
+    font-family: 'Bungee';
+    font-size: 2.5em;
+    line-height: 2em;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 0px #001A73;
+    text-align: center;
+}
+
+.follow-text {
+    position: relative;
+    font-size: 1em;
+    line-height: 1.3em;
+    font-family: 'Montserrat';
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.techhunt-logo {
+    position: relative;
+    width: 15%;
+    height: 0;
+    padding-top: 15%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('./images/follow-desktop/techhunt-logo.png');
+}
+
+.follow-btn-container {
+    position: relative;
+    display: flex;
+    width: 17%;
+    padding: 16px 32px;
+    background: #1947E6;
+    border: 2px solid #18191F;
+    box-shadow: 0px 4px 0px #18191F;
+    border-radius: 24px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.follow-btn-icon {
+    position: relative;
+    width: 15%;
+    padding-top: 15%;
+    height: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('./images/follow-desktop/follow-btn.png');
+}
+
+.follow-btn-text {
+    position: relative;
+    width: 75%;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 1.3em;
+    color: #FFFFFF;
+}

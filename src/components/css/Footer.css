@@ -1,7 +1,95 @@
 .footer {
     position: relative;
-    display: block;
+    display: flex;
     width: 100vw;
-    height: 100px;
     background-color: #FF89BB;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footer-img {
+    position: relative;
+    width: 15%;
+    padding-top: 20%;
+    height: 0;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('./images/footer-desktop/footer.png');
+}
+
+.footer-content-container {
+    position: relative;
+    width: 40%;
+    margin-left: 5%;
+}
+
+.footer-title {
+    font-family: 'Bungee';
+    font-size: 2.5em;
+    line-height: 1.3em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000000;
+    text-shadow: 0px 4px 0px #000000;
+}
+
+.footer-title span {
+    color: #61E4C5;
+}
+
+.footer-text {
+    margin-top: 1.5%;
+    font-family: 'Montserrat';
+    font-size: 1em;
+    color: #5F0039;
+}
+
+.footer-follow-container {
+    margin-left: 5%;
+}
+
+.footer-follow-text {
+    font-size: 0.8em;
+    margin-bottom: 5%;
+}
+
+.footer-follow-input {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 6px 6px 6px;
+    border: 2px solid #18191F;
+    border-radius: 16px;
+    background-color: #FFFFFF;
+}
+
+.footer-follow-input-field {
+    position: relative;
+    font-family: 'Montserrat';
+    display: block;
+    font-size: 1em;
+    width: 60%;
+    border: none;
+}
+
+.footer-follow-btn {
+    width: 36%;
+    position: relative;
+    display: block;
+    background-color: #18191F;
+    font-size: 0.8em;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 12px 0 12px 0;
+    text-align: center;
+}
+
+.footer-follow-input-field:focus {
+    border: none;
 }
