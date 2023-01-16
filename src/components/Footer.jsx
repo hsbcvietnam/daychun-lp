@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './css/Footer.css'
 import axios from 'axios'
 
-function Footer() {
+function Footer({isSubscribed, setIsSubscribed}) {
   const [email, setEmail] = useState('')
   const field = 'footer'
   const [time, setTime] = useState('')
@@ -23,6 +23,7 @@ function Footer() {
 			.then((response) => {
 				console.log(response);
 			});
+    setIsSubscribed(1 - isSubscribed)
 	};
 
   return (
@@ -38,7 +39,13 @@ function Footer() {
         <div className='footer-follow-input'>
           <form className="follow-box-form">
             <input className='footer-follow-input-field' type="email" name="email" placeholder='Email của bạn' value={email} onChange={(e) => setEmail(e.target.value)} />
-            <button type='submit' className='footer-follow-btn' onClick={handleSubmit}>Theo dõi</button>
+            {
+              (isSubscribed === 1) ? (
+                <button type='submit' className='footer-follow-btn footer-follow-btn-disabled' disabled>Đã theo dõi</button>
+              ) : (
+                <button type='submit' className='footer-follow-btn' onClick={handleSubmit}>Theo dõi</button>
+              )
+            }
           </form>
         </div>
       </div>

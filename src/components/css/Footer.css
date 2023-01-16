@@ -90,6 +90,14 @@
     text-align: center;
 }
 
+.footer-follow-btn-disabled {
+    background-color: #ffb92d;
+}
+
+.footer-follow-btn:hover {
+    border-color: transparent;
+}
+
 .footer-follow-input-field:focus {
     border: none;
 }

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import './css/Banner.css'
 
-function Banner() {
+function Banner({isSubscribed, setIsSubscribed}) {
     const [email, setEmail] = useState('')
     const field = 'banner'
     const [time, setTime] = useState('')
@@ -13,8 +13,7 @@ function Banner() {
     const handleSubmit = (e) => {
 		e.preventDefault()
         const objt = { email, field, time }
-
-		axios
+        axios
 			.post(
 				'https://sheet.best/api/sheets/aea193e5-5189-4a47-a403-37ff82876b1e',
 				objt
@@ -22,6 +21,7 @@ function Banner() {
 			.then((response) => {
 				console.log(response);
 			});
+        setIsSubscribed(1 - isSubscribed)
 	};
 
     return (
@@ -34,7 +34,13 @@ function Banner() {
                         <div className='follow-box-input'>
                             <form className="follow-box-form">
                                 <input className='follow-box-input-field' type="email" name="email" placeholder='Email của bạn' value={email} onChange={(e) => setEmail(e.target.value)} />
-                                <button type='submit' className='follow-box-btn' onClick={handleSubmit}>Theo dõi</button>
+                                {
+                                    (isSubscribed === 1) ? (
+                                        <button type='submit' className='follow-box-btn follow-box-btn-disabled' disabled>Đã theo dõi</button>
+                                    ) : (
+                                        <button type='submit' className='follow-box-btn' onClick={handleSubmit}>Theo dõi</button>
+                                    )
+                                }
                             </form>
                         </div>
                     </div>

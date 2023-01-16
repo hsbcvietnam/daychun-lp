@@ -124,6 +124,10 @@
     text-align: center;
 }
 
+.follow-box-btn-disabled {
+    background-color: #ffb92d;
+}
+
 .follow-box-btn:hover {
     border-color: transparent;
 }
