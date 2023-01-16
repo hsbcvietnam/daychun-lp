@@ -45,10 +45,23 @@
     text-shadow: 0px 4px 0px #FFFFFF;
 }
 
+.banner-text::before {
+    content: '';
+    width: 5%;
+    padding-top: 5%;
+    position: absolute;
+    top: -5%;
+    left: 7%;
+    background-image: url(./images/banner-desktop/text-before-icon.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 .banner-follow-box {
     position: relative;
     margin-top: 5%;
-    padding: 16px 32px;
+    padding: 10px 20px;
     width: 80%;
     border: 2px solid #18191F;
     border-radius: 24px;
@@ -80,12 +93,23 @@
     background-color: #FFFFFF;
 }
 
+.follow-box-form {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .follow-box-input-field {
     position: relative;
     display: block;
     font-size: 1em;
     width: 60%;
     border: none;
+    background-color: #FFFFFF;
+    color: #18191F;
 }
 
 .follow-box-btn {
@@ -98,6 +122,10 @@
     font-weight: bold;
     padding: 16px 0 16px 0;
     text-align: center;
+}
+
+.follow-box-btn:hover {
+    border-color: transparent;
 }
 
 .follow-box-input-field:focus {
@@ -191,4 +219,29 @@
     animation-direction: reverse;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
+}
+
+@media screen and (max-width: 900px) {
+    .banner-content-container {
+        width: 40%;
+        margin-right: 2.5%;
+        padding-left: 5%;
+    }
+
+    .banner-follow-box {
+        padding: 10px 15px;
+    }
+
+    .follow-box-input-field {
+        font-size: 0.8em;
+    }
+
+    .banner-follow-box-content {
+        padding-right: 2%;
+    }
+
+    .follow-box-btn {
+        padding: 8px;
+        font-size: 0.7em;
+    }
 }

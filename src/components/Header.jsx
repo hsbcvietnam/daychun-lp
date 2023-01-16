@@ -3,19 +3,15 @@ import './css/Header.css'
 
 function Header() {
     const navItems = [
-        ['intro', 'Giới thiệu', 'nav-selected'],
+        ['intro', 'Giới thiệu', ''],
         ['functionality', 'Tính năng', ''],
-        ['follow', 'Theo dõi', '']
+        ['follow', 'Theo dõi', 'nav-selected']
     ]
 
     const setSelected = (e) => {
-        navItems.forEach((item) => {
-            document.getElementById(`${item[0]}-nav`).classList.remove('nav-selected')
-        })
         navItems.map((item) => {
             if (e.target.id === `${item[0]}-nav`) {
-                document.getElementById(`${item[0]}-nav`).classList.add('nav-selected')
-                document.getElementById(item[0]).scrollIntoView()
+                document.getElementById(item[0]).scrollIntoView({behavior: 'smooth'})
             }
         })
     }

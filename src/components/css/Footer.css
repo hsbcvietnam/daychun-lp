@@ -73,7 +73,7 @@
     position: relative;
     font-family: 'Montserrat';
     display: block;
-    font-size: 1em;
+    font-size: 0.8em;
     width: 60%;
     border: none;
 }
@@ -92,4 +92,22 @@
 
 .footer-follow-input-field:focus {
     border: none;
+}
+
+@media screen and (max-width: 900px) {
+    .footer-img {
+        width: 17.5%;
+    }
+
+    .footer-content-container {
+        margin-left: 2.5%;
+    }
+
+    .footer-follow-container {
+        margin-left: 2.5%;
+    }
+
+    .footer-follow-input {
+        width: 90%;
+    }
 }

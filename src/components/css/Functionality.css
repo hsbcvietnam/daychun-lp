@@ -2,8 +2,6 @@
     position: relative;
     display: block;
     width: 100vw;
-    height: 0;
-    padding-top: 60%;
     background-image: url(./images/functionality-desktop/bg.png);
     background-position: center center;
     background-repeat: no-repeat;
@@ -11,13 +9,11 @@
 }
 
 .functionality-container {
-    position: absolute;
+    position: relative;
     display: flex;
     width: 100%;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
@@ -26,7 +22,7 @@
 .function-list {
     position: relative;
     display: flex;
-    width: 30%;
+    width: 35%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -38,7 +34,7 @@
     text-align: center;
     text-transform: uppercase;
     font-family: 'Bungee', cursive;
-    font-size: 2.5em;
+    font-size: 1.8em;
     line-height: 1.5em;
     color: #FFFFFF;
     text-shadow: 0px 4px 0px #00544A;
@@ -46,10 +42,10 @@
 
 .function-item-container {
     position: relative;
-    width: 60%;
+    width: 55%;
     background-color: #FFFFFF;
-    margin-top: 5%;
-    padding: 15px 30px;
+    margin-top: 2.5%;
+    padding: 10px 0;
     border-radius: 30px;
     border: 2px solid #18191F;
     box-shadow: 0px 2px 0px #18191F;
@@ -61,8 +57,8 @@
 }
 
 .function-item-icon {
-    width: 20%;
-    padding-top: 20%;
+    width: 15%;
+    padding-top: 15%;
     height: 0;
     background-position: center center;
     background-repeat: no-repeat;
@@ -87,7 +83,8 @@
 }
 
 .function-item-container.active {
-    width: 70%;
+    width: 65%;
+    position: relative;
 }
 
 #item-1.active {
@@ -130,6 +127,10 @@
     font-weight: bold;
 }
 
+.active .function-item-text {
+    color: #FFFFFF;
+}
+
 .click-area {
     position: absolute;
     width: 100%;
@@ -137,7 +138,6 @@
     bottom: 0;
     left: 0;
     right: 0;
-    cursor: pointer;
     z-index: 100;
 }
 
@@ -175,6 +175,7 @@
     font-family: 'Bungee';
     font-size: 1.5em;
     line-height: 1.2em;
+    margin-top: 2%;
     margin-bottom: 3%;
     text-shadow: 0px 3px 0px #000000;
     -webkit-text-stroke-width: 1px;
@@ -227,7 +228,9 @@
 #showcase-1 .showcase-img {
     width: 35%;
     padding-top: 50%;
-    background-image: url(./images/functionality-desktop/function-1-img.png);
+    background-image: url(./images/functionality-desktop/function-1-img.gif);
+    background-position: left center;
+    background-size: cover;
 }
 
 #showcase-2 .showcase-text-container {
@@ -255,7 +258,9 @@
     width: 60%;
     margin-left: -10%;
     padding-top: 50%;
-    background-image: url(./images/functionality-desktop/function-2-img.png);
+    background-image: url(./images/functionality-desktop/function-2-img.gif);
+    background-position: right center;
+    background-size: cover;
 }
 
 #showcase-3.function-showcase-container {
@@ -283,7 +288,9 @@
 #showcase-3 .showcase-img {
     width: 35%;
     padding-top: 50%;
-    background-image: url(./images/functionality-desktop/function-3-img.png);
+    background-image: url(./images/functionality-desktop/function-3-img.gif);
+    background-position: center center;
+    background-size: cover;
 }
 
 #showcase-4.function-showcase-container {
@@ -309,4 +316,40 @@
     width: 60%;
     padding-top: 50%;
     background-image: url(./images/functionality-desktop/function-4-img.png);
+}
+
+@media screen and (max-width: 900px) {
+    .function-list-title {
+        font-size: 1.5em;
+        width: 100%;
+    }
+
+    .function-item-container {
+        padding: 5px;
+        border-radius: 15px;
+    }
+
+    .function-showcase {
+        margin-left: -2.5%;
+    }
+
+    #showcase-1 .showcase-subtitle {
+        width: 80%;
+    }
+
+    #showcase-2 .showcase-title {
+        width: 70%;
+    }
+
+    #showcase-2 .showcase-subtitle {
+        width: 80%;
+    }
+
+    #showcase-2 .showcase-img {
+        margin-left: -15%;
+    }
+
+    #showcase-4 .showcase-text-container {
+        margin-left: -17.5%;
+    }
 }

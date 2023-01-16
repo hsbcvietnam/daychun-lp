@@ -2,8 +2,6 @@
     position: relative;
     display: block;
     width: 100vw;
-    height: 0;
-    padding-top: 44.59%;
     background-image: url(./images/follow-desktop/bg.png);
     background-position: center center;
     background-repeat: no-repeat;
@@ -11,13 +9,11 @@
 }
 
 .follow-container {
-    position: absolute;
+    position: relative;
     display: flex;
     width: 100%;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -35,6 +31,7 @@
 
 .follow-text {
     position: relative;
+    width: 60%;
     font-size: 1em;
     line-height: 1.3em;
     font-family: 'Montserrat';
@@ -47,33 +44,33 @@
     width: 15%;
     height: 0;
     padding-top: 15%;
-    margin-top: 2.5%;
-    margin-bottom: 2.5%;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
     background-image: url('./images/follow-desktop/techhunt-logo.png');
+    cursor: pointer;
 }
 
 .follow-btn-container {
     position: relative;
     display: flex;
-    width: 17%;
-    padding: 16px 32px;
+    padding: 10px 20px;
     background: #1947E6;
     border: 2px solid #18191F;
     box-shadow: 0px 4px 0px #18191F;
+    width: 15%;
+    max-width: 260px;
     border-radius: 24px;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     cursor: pointer;
 }
 
 .follow-btn-icon {
     position: relative;
-    width: 15%;
-    padding-top: 15%;
+    width: 10%;
+    padding-top: 10%;
     height: 0;
     background-position: center center;
     background-repeat: no-repeat;
@@ -83,10 +80,22 @@
 
 .follow-btn-text {
     position: relative;
-    width: 75%;
+    width: 85%;
+    margin-left: 5%;
     font-family: 'Montserrat';
     font-weight: bold;
     font-size: 1em;
     line-height: 1.3em;
     color: #FFFFFF;
+}
+
+@media screen and (max-width: 900px) {
+    .techhunt-logo {
+        margin: 5px 0;
+    }
+
+    .follow-btn-container {
+        width: 20%;
+        padding: 10px 15px;
+    }
 }

@@ -1,11 +1,32 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './css/Footer.css'
+import axios from 'axios'
 
 function Footer() {
-  const [input, setInput] = useState('')
+  const [email, setEmail] = useState('')
+  const field = 'footer'
+  const [time, setTime] = useState('')
+  useEffect(() => {
+    setTime(Date().toLocaleString().slice(0, 24))
+  }, [email])
+  
+
+  const handleSubmit = (e) => {
+		e.preventDefault()
+    const objt = { email, field, time }
+
+		axios
+			.post(
+				'https://sheet.best/api/sheets/aea193e5-5189-4a47-a403-37ff82876b1e',
+				objt
+			)
+			.then((response) => {
+				console.log(response);
+			});
+	};
 
   return (
-    <div className='footer'>
+    <div id='follow' className='footer'>
       <div className='footer-img'></div>
       <div className='footer-content-container'>
         <div className='footer-title'>coming <span>soon !</span></div>
@@ -15,8 +36,10 @@ function Footer() {
       <div className='footer-follow-container'>
         <div className='footer-follow-text'>Theo dõi ngay để nhận thông báo mới nhất</div>
         <div className='footer-follow-input'>
-          <input className='footer-follow-input-field' type="text" placeholder='Email của bạn' value={input} onChange={(e) => setInput(e.target.value)} />
-          <button className='footer-follow-btn'>Theo dõi</button>
+          <form className="follow-box-form">
+            <input className='footer-follow-input-field' type="email" name="email" placeholder='Email của bạn' value={email} onChange={(e) => setEmail(e.target.value)} />
+            <button type='submit' className='footer-follow-btn' onClick={handleSubmit}>Theo dõi</button>
+          </form>
         </div>
       </div>
     </div>

@@ -57,13 +57,13 @@ function Functionality() {
     <div id='functionality' className='functionality'>
       <div className='functionality-container'>
         <div className='function-list'>
-          <div className='function-list-title'>những tính năng thú vị</div>
+          <div className='function-list-title'>những tính năng<br />thú vị</div>
           {
             func.map((item) => (
               <div key={`item-${item.id}`} id={`item-${item.id}`} className='function-item-container'>
                 <div className='function-item-icon'></div>
                 <div className='function-item-text'>{`${item.text}`}</div>
-                <div id={`click-${item.id}`} className='click-area' onClick={(e) => handleItemClick(e)}></div>
+                <div id={`click-${item.id}`} className='click-area' onMouseEnter={(e) => handleItemClick(e)}></div>
               </div>
             ))
           }
