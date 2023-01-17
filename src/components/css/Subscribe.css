@@ -1,6 +1,6 @@
 .subscribe {
     position: fixed;
-    width: 30%;
+    width: 25%;
     bottom: 5%;
     right: 5%;
     display: block;
@@ -38,13 +38,13 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     background-color: #FF89BB;
 }
 
 .subscribe-follow-box-content {
     position: relative;
-    width: 40%;
-    padding-right: 1%;
+    width: 45%;
     font-size: 0.6em;
     line-height: 1.5em;
     color: #18191F;
@@ -52,7 +52,7 @@
 
 .subscribe-follow-box-input {
     position: relative;
-    width: 55%;
+    width: 50%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -75,15 +75,15 @@
 .subscribe-follow-box-input-field {
     position: relative;
     display: block;
-    font-size: 0.8em;
-    width: 60%;
+    font-size: 0.6em;
+    width: 53%;
     border: none;
     background-color: #FFFFFF;
     color: #18191F;
 }
 
 .subscribe-follow-box-btn {
-    width: 36%;
+    width: 45%;
     position: relative;
     display: block;
     background-color: #18191F;

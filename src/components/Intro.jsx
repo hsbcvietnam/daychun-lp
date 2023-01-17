@@ -1,4 +1,5 @@
 import React from 'react'
+import daychunvid from './css/images/intro-desktop/daychun.mp4'
 import './css/Intro.css'
 
 function Intro() {
@@ -10,10 +11,9 @@ function Intro() {
           <div className='intro-text'>Phàm trên cuộc đời này nếu tổng hợp những sự mệt mỏi khi set kèo cùng hội bạn thân chắc có thể viết thành một cuốn sách dài 3 phần, mỗi phần dài 8 xen-ti. Hãy xem thử Dây Chun “đánh tan cơn mệt” này như thế nào nhé!</div>
         </div>
         <div className='video-container'>
-          <div className='placeholder'>
-            <div className='placeholder-text'>"Placeholder video với màu nền HSBC"</div>
-          </div>
-          {/* <video src='' autoPlay controls></video> */}
+          <video id='video' className='placeholder' autoPlay loop >
+            <source src={daychunvid} type="video/mp4" />
+          </video>
         </div>
       </div>
       <div className='weird-thing-1-container'>

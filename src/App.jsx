@@ -19,16 +19,16 @@ function App() {
   }, [])
 
   const listenToScroll = () => {
-    const heightToHideFrom = document.getElementById('banner').offsetTop + document.getElementById('banner').offsetHeight - 300;
+    const heightToHideFrom = document.getElementById('intro').offsetTop + 100;
     const heightToShowFrom = document.getElementById('follow').offsetTop - document.getElementById('banner').offsetHeight;
-    console.log(heightToShowFrom)
     const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
 
     if ((winScroll > heightToHideFrom) && (winScroll < heightToShowFrom)) {  
       setIsVisible(true);
     } else {
       setIsVisible(false);
-    }  
+    }
+    document.getElementById('video').play();
   };
 
   return (
