@@ -23,6 +23,7 @@ function Subscribe({isSubscribed, setIsSubscribed}) {
 		  }
     );
     setIsSubscribed(1 - isSubscribed)
+    setEmail('')
 	};
 
   return (

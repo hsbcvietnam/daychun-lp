@@ -24,6 +24,7 @@ function Footer({isSubscribed, setIsSubscribed}) {
 				console.log(response);
 			});
     setIsSubscribed(1 - isSubscribed)
+    setEmail('')
 	};
 
   return (

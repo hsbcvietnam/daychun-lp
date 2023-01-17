@@ -63,13 +63,13 @@
     border-radius: 24px;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     cursor: pointer;
 }
 
 .follow-btn-icon {
     position: relative;
-    width: 10%;
+    width: 12%;
     padding-top: 10%;
     height: 0;
     background-position: center center;
@@ -80,11 +80,10 @@
 
 .follow-btn-text {
     position: relative;
-    width: 85%;
-    margin-left: 5%;
+    width: 80%;
     font-family: 'Montserrat';
     font-weight: bold;
-    font-size: 1em;
+    font-size: 0.9em;
     line-height: 1.3em;
     color: #FFFFFF;
 }
