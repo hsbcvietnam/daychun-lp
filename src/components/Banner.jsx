@@ -25,14 +25,14 @@ function Banner({isSubscribed, setIsSubscribed}) {
 	};
 
     return (
-        <div className='banner'>
+        <div id='banner' className='banner'>
             <div className='banner-container'>
                 <div className='banner-content-container'>
                     <div className='banner-text'>đón chờ daychun ra mắt set kèo thơm kèo đẹp</div>
                     <div className='banner-follow-box'>
                         <div className='banner-follow-box-content'>Để lại email để nhận thông báo từ Dâychun</div>
                         <div className='follow-box-input'>
-                            <form className="follow-box-form">
+                            <form className='follow-box-form'>
                                 <input className='follow-box-input-field' type="email" name="email" placeholder='Email của bạn' value={email} onChange={(e) => setEmail(e.target.value)} />
                                 {
                                     (isSubscribed === 1) ? (
