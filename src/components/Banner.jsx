@@ -11,6 +11,9 @@ function Banner({isSubscribed, setIsSubscribed}) {
     }, [email])
 
     const handleSubmit = (e) => {
+        if (isSubscribed === 0) {
+            document.getElementById('success').style.display = 'block'
+        }
 		e.preventDefault()
         const objt = { email, field, time }
         axios

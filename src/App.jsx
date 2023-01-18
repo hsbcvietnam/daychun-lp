@@ -7,6 +7,7 @@ import Functionality from './components/Functionality'
 import Follow from './components/Follow'
 import Footer from './components/Footer'
 import Subscribe from './components/Subscribe'
+import Success from './components/Success'
 
 function App() {
   const [isSubscribed, setIsSubscribed] = useState(0)
@@ -28,7 +29,6 @@ function App() {
     } else {
       setIsVisible(false);
     }
-    document.getElementById('video').play();
   };
 
   return (
@@ -42,6 +42,7 @@ function App() {
       {
         isVisible && <Subscribe isSubscribed={isSubscribed} setIsSubscribed={setIsSubscribed} />
       }
+      <Success />
     </div>
   )
 }

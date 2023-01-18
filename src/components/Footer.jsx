@@ -12,9 +12,11 @@ function Footer({isSubscribed, setIsSubscribed}) {
   
 
   const handleSubmit = (e) => {
+    if (isSubscribed === 0) {
+      document.getElementById('success').style.display = 'block'
+    }
 		e.preventDefault()
     const objt = { email, field, time }
-
 		axios
 			.post(
 				'https://sheet.best/api/sheets/aea193e5-5189-4a47-a403-37ff82876b1e',
