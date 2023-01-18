@@ -19,7 +19,7 @@ function App() {
   }, [])
 
   const listenToScroll = () => {
-    const heightToHideFrom = document.getElementById('intro').offsetTop + 100;
+    const heightToHideFrom = document.getElementById('banner').offsetTop + 100;
     const heightToShowFrom = document.getElementById('follow').offsetTop - document.getElementById('banner').offsetHeight;
     const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
 
