@@ -71,3 +71,33 @@
     background-color: #FF89BB;
     font-weight: 700;
 }
+
+@media screen and (max-width: 480px) {
+    .header {
+        justify-content: space-between;
+    }
+
+    .header-logo-container {
+        position: relative;
+        width: 45%;
+        margin-left: 5%;
+        margin-right: 0;
+    }
+
+    .header-logo {
+        padding-top: 16.43%;
+        background-image: url('./images/header-mobile/logo.png');
+    }
+
+    .header-logo .click-area {
+        padding-top: 16.43%;
+    }
+
+    #intro-nav, #functionality-nav {
+        display: none;
+    }
+
+    .header-nav-area {
+        margin-right: 5%;
+    }
+}

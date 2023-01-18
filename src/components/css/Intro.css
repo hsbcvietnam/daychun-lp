@@ -44,6 +44,16 @@
     margin-bottom: 5%;
 }
 
+.intro-text {
+    line-height: 1.5em;
+}
+
+@media (prefers-color-scheme: dark) {
+    .intro-text {
+        color: #213547;
+    }
+}
+
 .video-container {
     position: relative;
     display: flex;
@@ -127,4 +137,56 @@
     animation-duration: 3s;
     animation-direction: reverse;
     animation-iteration-count: infinite;
+}
+
+@media screen and (max-width: 480px) {
+    .intro {
+        height: 90vh;
+        padding-top: 0;
+        background-image: url(./images/intro-mobile/bg.png);
+    }
+
+    .intro-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 20%;
+    }
+
+    .intro-text-container {
+        width: 100%;
+        padding: 0;
+        align-items: center;
+    }
+
+    .intro-text-title {
+        text-align: center;
+        font-size: 2.5em;
+        margin-bottom: 2.5%;
+    }
+
+    .intro-text {
+        font-size: 1.1em;
+        width: 90%;
+        text-align: center;
+    }
+
+    .video-container {
+        width: 90%;
+        padding: 0;
+        margin-top: 10%;
+    }
+
+    .weird-thing-1-container {
+        width: 30%;
+        top: unset;
+        bottom: 2.5%;
+        right: 5%;
+    }
+
+    .weird-thing-2-container {
+        width: 25%;
+        top: 2.5%;
+        bottom: unset;
+        left: -2.5%;
+    }
 }

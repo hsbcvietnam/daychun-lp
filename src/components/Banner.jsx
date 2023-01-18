@@ -33,6 +33,12 @@ function Banner({isSubscribed, setIsSubscribed}) {
             <div className='banner-container'>
                 <div className='banner-content-container'>
                     <div className='banner-text'>đón chờ daychun ra mắt set kèo thơm kèo đẹp</div>
+                    <div className='banner-text banner-text-mobile'>
+                        <span>đón chờ</span><br />
+                        daychun ra mắt<br />
+                        <span>set kèo thơm</span><br />
+                        kèo đẹp
+                    </div>
                     <div className='banner-follow-box'>
                         <div className='banner-follow-box-content'>Để lại email để nhận thông báo từ Dâychun</div>
                         <div className='follow-box-input'>

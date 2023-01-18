@@ -69,6 +69,12 @@
     background-color: #FFFFFF;
 }
 
+@media (prefers-color-scheme: dark) {
+    .footer-follow-input {
+        background-color: #FFFFFF;
+    }
+}
+
 .footer-follow-input-field {
     position: relative;
     font-family: 'Montserrat';
@@ -117,5 +123,49 @@
 
     .footer-follow-input {
         width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer {
+        padding-top: 10%;
+        padding-bottom: 20%;
+        flex-wrap: wrap;
+    }
+
+    .footer-img {
+        width: 30%;
+        padding-top: 37.42%;
+        background-image: url('./images/footer-mobile/footer.png');
+    }
+
+    .footer-content-container {
+        margin-left: 5%;
+        width: 60%;
+    }
+
+    .footer-title {
+        font-size: 2em;
+    }
+
+    .footer-text {
+        font-size: 0.9em;
+    }
+
+    .footer-follow-container {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .footer-follow-text {
+        margin-bottom: 2.5%;
+        margin-top: 5%;
+        margin-left: 5%;
+        font-size: 1.1em;
+    }
+
+    .footer-follow-input {
+        margin-left: 5%;
+        width: 85%;
     }
 }

@@ -112,6 +112,12 @@
     color: #18191F;
 }
 
+@media (prefers-color-scheme: dark) {
+    .follow-box-input-field {
+        background-color: #FFFFFF;
+    }
+}
+
 .follow-box-btn {
     width: 36%;
     position: relative;
@@ -120,7 +126,7 @@
     font-size: 0.8em;
     color: #FFFFFF;
     font-weight: bold;
-    padding: 16px 0 16px 0;
+    padding: 16px 4px 16px 4px;
     text-align: center;
 }
 
@@ -243,5 +249,58 @@
     .follow-box-btn {
         padding: 8px;
         font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .banner {
+        height: 100vh;
+        padding-top: 0;
+        background-image: url('./images/banner-mobile/banner-bg.png');
+    }
+
+    .banner-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .banner-content-container {
+        padding-top: 25%;
+        width: 90%;
+        margin-right: 0;
+        padding-left: 0;
+        align-items: center;
+    }
+
+    .banner-text {
+        text-align: center;
+        display: none;
+    }
+
+    .banner-text-mobile {
+        display: block;
+        font-size: 2.5em;
+        line-height: 1.8em;
+    }
+
+    .banner-text-mobile span {
+        font-size: 1.35em;
+    }
+
+    .banner-follow-box {
+        display: none;
+    }
+
+    .banner-image-container {
+        position: relative;
+        margin-top: 15%;
+        width: 135%;
+        display: flex;
+        perspective: 100vw;
+    }
+
+    .banner-image-2 {
+        display: none;
     }
 }

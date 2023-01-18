@@ -32,7 +32,7 @@
 .follow-text {
     position: relative;
     width: 60%;
-    font-size: 1em;
+    font-size: 0.8em;
     line-height: 1.3em;
     font-family: 'Montserrat';
     color: #FFFFFF;
@@ -96,5 +96,45 @@
     .follow-btn-container {
         width: 20%;
         padding: 10px 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .follow {
+        background-image: url(./images/follow-desktop/bg.png);
+    }
+
+    .follow-container {
+        position: relative;
+        display: flex;
+        width: 100%;
+        padding-top: 15%;
+        padding-bottom: 15%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .follow-text {
+        width: 90%;
+        font-size: 1em;
+    }
+
+    .techhunt-logo {
+        width: 60%;
+        padding-top: 60%;
+    }
+
+    .follow-btn-container {
+        width: 50%;
+    }
+
+    .follow-btn-icon {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .follow-btn-text {
+        font-size: 1.2em;
     }
 }

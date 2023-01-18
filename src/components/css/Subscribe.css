@@ -82,6 +82,12 @@
     color: #18191F;
 }
 
+@media (prefers-color-scheme: dark) {
+    .subscribe-follow-box-input-field {
+        background-color: #FFFFFF;
+    }
+}
+
 .subscribe-follow-box-btn {
     width: 45%;
     position: relative;
