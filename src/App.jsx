@@ -11,7 +11,6 @@ import Success from './components/Success'
 
 function App() {
   const [isSubscribed, setIsSubscribed] = useState(0)
-  const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {   
     window.addEventListener("scroll", listenToScroll);
@@ -25,9 +24,9 @@ function App() {
     const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
 
     if ((winScroll > heightToHideFrom) && (winScroll < heightToShowFrom)) {  
-      setIsVisible(true);
+      document.getElementById('subscribe').style.display = 'block'
     } else {
-      setIsVisible(false);
+      document.getElementById('subscribe').style.display = 'none'
     }
   };
 
@@ -39,9 +38,7 @@ function App() {
       <Functionality />
       <Follow />
       <Footer isSubscribed={isSubscribed} setIsSubscribed={setIsSubscribed} />
-      {
-        isVisible && <Subscribe isSubscribed={isSubscribed} setIsSubscribed={setIsSubscribed} />
-      }
+      <Subscribe isSubscribed={isSubscribed} setIsSubscribed={setIsSubscribed} />
       <Success />
     </div>
   )

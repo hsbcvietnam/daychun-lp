@@ -168,4 +168,12 @@
         margin-left: 5%;
         width: 85%;
     }
+
+    .footer-follow-input-field {
+        font-size: 1.2em;
+    }
+
+    .footer-follow-btn {
+        font-size: 1.2em;
+    }
 }

@@ -141,7 +141,7 @@
 
 @media screen and (max-width: 480px) {
     .intro {
-        height: 90vh;
+        height: 110vh;
         padding-top: 0;
         background-image: url(./images/intro-mobile/bg.png);
     }

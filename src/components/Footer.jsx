@@ -25,7 +25,7 @@ function Footer({isSubscribed, setIsSubscribed}) {
 			.then((response) => {
 				console.log(response);
 			});
-    setIsSubscribed(1 - isSubscribed)
+    setIsSubscribed(1)
     setEmail('')
 	};
 

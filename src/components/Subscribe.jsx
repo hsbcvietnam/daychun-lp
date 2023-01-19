@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import axios from 'axios'
 import './css/Subscribe.css'
 
 function Subscribe({isSubscribed, setIsSubscribed}) {
@@ -12,22 +13,21 @@ function Subscribe({isSubscribed, setIsSubscribed}) {
 
   const handleSubmit = (e) => {
     if (isSubscribed === 0) {
-      document.getElementById('success').style.display = 'block'
+        document.getElementById('success').style.display = 'block'
     }
-		e.preventDefault()
+    e.preventDefault()
     const objt = { email, field, time }
     axios
-			.post(
-				'https://sheet.best/api/sheets/aea193e5-5189-4a47-a403-37ff82876b1e',
-				objt
-			)
-			.then((response) => {
-				console.log(response);
-		  }
-    );
-    setIsSubscribed(1 - isSubscribed)
+      .post(
+        'https://sheet.best/api/sheets/aea193e5-5189-4a47-a403-37ff82876b1e',
+        objt
+      )
+      .then((response) => {
+        console.log(response);
+      });
+    setIsSubscribed(1)
     setEmail('')
-	};
+};
 
   return (
     <div id='subscribe' className='subscribe'>

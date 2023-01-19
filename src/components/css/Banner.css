@@ -257,6 +257,7 @@
         height: 100vh;
         padding-top: 0;
         background-image: url('./images/banner-mobile/banner-bg.png');
+        overflow-x: hidden;
     }
 
     .banner-container {

@@ -60,13 +60,24 @@ function Functionality() {
           <div className='function-list-title'>những tính năng<br />thú vị</div>
           {
             func.map((item) => (
-              <div key={`item-${item.id}`} id={`item-${item.id}`} className='function-item-container'>
+              <div key={`item-${item.id}`} id={`item-${item.id}`} className='function-item-container hide-on-mobile'>
                 <div className='function-item-icon'></div>
                 <div className='function-item-text'>{`${item.text}`}</div>
                 <div id={`click-${item.id}`} className='click-area' onMouseEnter={(e) => handleItemClick(e)}></div>
               </div>
             ))
           }
+          <div className='show-on-mobile'>
+            {
+              func.map((item) => (
+                <div key={`item-${item.id}`} id={`item-${item.id}`} className='function-item-container'>
+                  <div className='function-item-icon'></div>
+                  <div className='function-item-text'>{`${item.text}`}</div>
+                  <div id={`click-${item.id}`} className='click-area' onMouseEnter={(e) => handleItemClick(e)}></div>
+                </div>
+              ))
+            }
+          </div>
         </div>
         <div className='function-showcase'>
           {

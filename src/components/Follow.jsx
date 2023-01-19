@@ -14,7 +14,7 @@ function Follow() {
         <div className='techhunt-logo' onClick={handleClick}></div>
         <div className='follow-btn-container' onClick={handleClick}>
           <div className='follow-btn-icon'></div>
-          <div className='follow-btn-text'>Tìm hiểu thêm<br />về Techhunt</div>
+          <div className='follow-btn-text'>Tìm hiểu thêm về Techhunt</div>
         </div>
       </div>
     </div>

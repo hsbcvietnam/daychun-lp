@@ -43,6 +43,7 @@ body {
   justify-content: flex-start;
   overflow-x: hidden;
   overflow-y: auto;
+  position: relative;
 }
 
 h1 {
@@ -60,9 +61,6 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
 }
 button:focus,
 button:focus-visible {
