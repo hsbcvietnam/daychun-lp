@@ -66,19 +66,19 @@
     margin-bottom: 5%;
 }
 
-#item-1 .function-item-icon {
+#item-1 .function-item-icon, #item-1-mobile .function-item-icon {
     background-image: url('./images/functionality-desktop/icon-1.png');
 }
 
-#item-2 .function-item-icon {
+#item-2 .function-item-icon, #item-2-mobile .function-item-icon {
     background-image: url('./images/functionality-desktop/icon-2.png');
 }
 
-#item-3 .function-item-icon {
+#item-3 .function-item-icon, #item-3-mobile .function-item-icon {
     background-image: url('./images/functionality-desktop/icon-3.png');
 }
 
-#item-4 .function-item-icon {
+#item-4 .function-item-icon, #item-4-mobile .function-item-icon {
     background-image: url('./images/functionality-desktop/icon-4.png');
 }
 
@@ -87,36 +87,36 @@
     position: relative;
 }
 
-#item-1.active {
+#item-1.active, #item-1-mobile.active {
     background-color: #FFBD12;
 }
 
-#item-1.active .function-item-icon {
-    background-image: url('./images/functionality-desktop/icon-1-active.png');
-}
-
-#item-2.active .function-item-icon {
-    background-image: url('./images/functionality-desktop/icon-2-active.png');
-}
-
-#item-3.active .function-item-icon {
-    background-image: url('./images/functionality-desktop/icon-3-active.png');
-}
-
-#item-4.active .function-item-icon {
-    background-image: url('./images/functionality-desktop/icon-4-active.png');
-}
-
-#item-2.active {
+#item-2.active, #item-2-mobile.active {
     background-color: #8094FF;
 }
 
-#item-3.active {
+#item-3.active, #item-3-mobile.active {
     background-color: #F95A2C;
 }
 
-#item-4.active {
+#item-4.active, #item-4-mobile.active {
     background-color: #FF89BB;
+}
+
+#item-1.active .function-item-icon, #item-1-mobile.active .function-item-icon {
+    background-image: url('./images/functionality-desktop/icon-1-active.png');
+}
+
+#item-2.active .function-item-icon, #item-2-mobile.active .function-item-icon {
+    background-image: url('./images/functionality-desktop/icon-2-active.png');
+}
+
+#item-3.active .function-item-icon, #item-3-mobile.active .function-item-icon {
+    background-image: url('./images/functionality-desktop/icon-3-active.png');
+}
+
+#item-4.active .function-item-icon, #item-4-mobile.active .function-item-icon {
+    background-image: url('./images/functionality-desktop/icon-4-active.png');
 }
 
 .function-item-text {
@@ -484,6 +484,9 @@
     #showcase-4 .showcase-img {
         width: 50%;
         padding-top: 90%;
+        background-image: url(./images/functionality-desktop/function-4-img-mobile.gif);
+        background-size: cover;
+        background-position: left center;
     }
 
     #showcase-4 .showcase-title {
@@ -499,5 +502,10 @@
         width: 50%;
         margin-left: 0;
         padding-top: 0;
+    }
+
+    .function-item-container.active {
+        width: 35%;
+        position: relative;
     }
 }

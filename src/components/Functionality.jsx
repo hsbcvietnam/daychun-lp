@@ -20,35 +20,51 @@ function Functionality() {
   const [activeFunc, setActiveFunc] = useState(0)
 
   const handleItemClick = (e) => {
-    if (e.target.id === 'click-1') {
+    if ((e.target.id === 'click-1') || (e.target.id === 'click-1-mobile')) {
       document.getElementById('item-1').classList.add('active')
       document.getElementById('item-2').classList.remove('active')
       document.getElementById('item-3').classList.remove('active')
       document.getElementById('item-4').classList.remove('active')
+      document.getElementById('item-1-mobile').classList.add('active')
+      document.getElementById('item-2-mobile').classList.remove('active')
+      document.getElementById('item-3-mobile').classList.remove('active')
+      document.getElementById('item-4-mobile').classList.remove('active')
       setActiveFunc(1)
     }
 
-    if (e.target.id === 'click-2') {
+    if ((e.target.id === 'click-2') || (e.target.id === 'click-2-mobile')) {
       document.getElementById('item-1').classList.remove('active')
       document.getElementById('item-2').classList.add('active')
       document.getElementById('item-3').classList.remove('active')
       document.getElementById('item-4').classList.remove('active')
+      document.getElementById('item-1-mobile').classList.remove('active')
+      document.getElementById('item-2-mobile').classList.add('active')
+      document.getElementById('item-3-mobile').classList.remove('active')
+      document.getElementById('item-4-mobile').classList.remove('active')
       setActiveFunc(2)
     }
     
-    if (e.target.id === 'click-3') {
+    if ((e.target.id === 'click-3') || (e.target.id === 'click-3-mobile')) {
       document.getElementById('item-1').classList.remove('active')
       document.getElementById('item-2').classList.remove('active')
       document.getElementById('item-3').classList.add('active')
       document.getElementById('item-4').classList.remove('active')
+      document.getElementById('item-1-mobile').classList.remove('active')
+      document.getElementById('item-2-mobile').classList.remove('active')
+      document.getElementById('item-3-mobile').classList.add('active')
+      document.getElementById('item-4-mobile').classList.remove('active')
       setActiveFunc(3)
     }
 
-    if (e.target.id === 'click-4') {
+    if ((e.target.id === 'click-4') || (e.target.id === 'click-4-mobile')) {
       document.getElementById('item-1').classList.remove('active')
       document.getElementById('item-2').classList.remove('active')
       document.getElementById('item-3').classList.remove('active')
       document.getElementById('item-4').classList.add('active')
+      document.getElementById('item-1-mobile').classList.remove('active')
+      document.getElementById('item-2-mobile').classList.remove('active')
+      document.getElementById('item-3-mobile').classList.remove('active')
+      document.getElementById('item-4-mobile').classList.add('active')
       setActiveFunc(4)
     }
   }  
@@ -70,10 +86,10 @@ function Functionality() {
           <div className='show-on-mobile'>
             {
               func.map((item) => (
-                <div key={`item-${item.id}`} id={`item-${item.id}`} className='function-item-container'>
+                <div key={`item-${item.id}-mobile`} id={`item-${item.id}-mobile`} className='function-item-container'>
                   <div className='function-item-icon'></div>
                   <div className='function-item-text'>{`${item.text}`}</div>
-                  <div id={`click-${item.id}`} className='click-area' onMouseEnter={(e) => handleItemClick(e)}></div>
+                  <div id={`click-${item.id}-mobile`} className='click-area' onClick={(e) => handleItemClick(e)}></div>
                 </div>
               ))
             }

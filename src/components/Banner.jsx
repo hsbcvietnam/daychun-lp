@@ -6,27 +6,40 @@ function Banner({isSubscribed, setIsSubscribed}) {
     const [email, setEmail] = useState('')
     const field = 'banner'
     const [time, setTime] = useState('')
+    const [shake, setShake] = useState(false)
     useEffect(() => {
         setTime(Date().toLocaleString().slice(0, 24))
     }, [email])
 
+    const animate = () => {
+        // Button begins to shake
+        setShake(true);
+        
+        // Buttons stops to shake after 2 seconds
+        setTimeout(() => setShake(false), 1000);
+    }
+
     const handleSubmit = (e) => {
-        if (isSubscribed === 0) {
+        e.preventDefault()
+        if (/\S+@\S+\.\S+/.test(email)) {
+          if (isSubscribed === 0) {
             document.getElementById('success').style.display = 'block'
+          }
+          const objt = { email, field, time }
+          axios
+            .post(
+              'https://sheet.best/api/sheets/aea193e5-5189-4a47-a403-37ff82876b1e',
+              objt
+            )
+            .then((response) => {
+              console.log(response);
+            });
+          setIsSubscribed(1)
+          setEmail('')
+        } else {
+          animate();
         }
-		e.preventDefault()
-        const objt = { email, field, time }
-        axios
-			.post(
-				'https://sheet.best/api/sheets/aea193e5-5189-4a47-a403-37ff82876b1e',
-				objt
-			)
-			.then((response) => {
-				console.log(response);
-			});
-        setIsSubscribed(1)
-        setEmail('')
-	};
+    }
 
     return (
         <div id='banner' className='banner'>
@@ -41,7 +54,7 @@ function Banner({isSubscribed, setIsSubscribed}) {
                     </div>
                     <div className='banner-follow-box'>
                         <div className='banner-follow-box-content'>Để lại email để nhận thông báo từ Dâychun</div>
-                        <div className='follow-box-input'>
+                        <div id={shake ? `shake` : null} className='follow-box-input'>
                             <form className='follow-box-form'>
                                 <input className='follow-box-input-field' type="email" name="email" placeholder='Email của bạn' value={email} onChange={(e) => setEmail(e.target.value)} />
                                 {
