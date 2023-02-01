@@ -399,6 +399,7 @@
         flex-shrink: 0;
         margin-left: 1.5%;
         margin-right: 1.5%;
+        margin-bottom: 2.5%;
     }
 
     .function-item-text {
@@ -407,21 +408,26 @@
 
     .function-showcase {
         margin-left: 0;
-        width: 90%;
+        width: 100%;
         padding-top: 5%;
-        padding-left: 5%;
     }
 
     .function-showcase-container {
         justify-content: space-between;
+        width: 100%;
     }
 
     .showcase-text-container {
         width: 45%;
+        margin-left: 5%;
+    }
+
+    .showcase-content {
+        width: 95%;
     }
 
     #showcase-1 .showcase-title, #showcase-1 .showcase-subtitle, #showcase-2 .showcase-title, #showcase-2 .showcase-subtitle, #showcase-3 .showcase-title, #showcase-3 .showcase-subtitle, #showcase-4 .showcase-title, #showcase-4 .showcase-subtitle {
-        font-size: 1.6em;
+        font-size: 1.5em;
         line-height: 1.3em;
     }
 
@@ -435,7 +441,7 @@
     }
 
     #showcase-1 .showcase-title {
-        width: 80%;
+        width: 75%;
     }
 
     #showcase-1 .showcase-text-container {
@@ -469,7 +475,7 @@
     }
 
     #showcase-3 .showcase-title {
-        width: 80%;
+        width: 70%;
     }
 
     #showcase-3 .showcase-subtitle {
@@ -490,11 +496,11 @@
     }
 
     #showcase-4 .showcase-title {
-        width: 80%;
+        width: 70%;
     }
 
     #showcase-4 .showcase-subtitle {
-        width: 80%;
+        width: 70%;
         white-space: normal;
     }
 
@@ -507,5 +513,17 @@
     .function-item-container.active {
         width: 35%;
         position: relative;
+    }
+
+    .mobile-icon {
+        width: 50%;
+        background-image: url('./images/functionality-desktop/icon.png');
+        background-position: left center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-top: 5%;
+        margin-bottom: 2.5%;
+        padding-top: 30%;
+        height: 0;
     }
 }

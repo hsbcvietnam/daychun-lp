@@ -109,6 +109,9 @@ function Functionality() {
             )
           }
         </div>
+        <div className='show-on-mobile mobile-icon'>
+          
+        </div>
       </div>
     </div>
   )

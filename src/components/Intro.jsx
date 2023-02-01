@@ -23,6 +23,12 @@ function Intro() {
       <div className='weird-thing-2-container'>
         <div className='weird-thing-2'></div>
       </div>
+      <div className='arrow-1-container'>
+        <div className='arrow-1'></div>
+      </div>
+      <div className='arrow-2-container'>
+        <div className='arrow-2'></div>
+      </div>
     </div>
   )
 }
