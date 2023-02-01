@@ -117,8 +117,8 @@
     }
 
     .subscribe-follow-box {
-        width: 90%;
-        padding: 5px 4%;
+        width: 99%;
+        padding: 5px 0;
         flex-direction: column;
     }
 

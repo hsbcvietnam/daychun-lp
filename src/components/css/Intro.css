@@ -208,15 +208,23 @@
 
 @media screen and (max-width: 480px) {
     .intro {
-        height: 110vh;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: unset;
         padding-top: 0;
         background-image: url(./images/intro-mobile/bg.png);
     }
 
     .intro-container {
+        position: relative;
         flex-direction: column;
         justify-content: flex-start;
         padding-top: 20%;
+        top: unset;
+        bottom: unset;
+        left: unset;
+        right: unset;
     }
 
     .intro-text-container {
@@ -244,10 +252,13 @@
     }
 
     .weird-thing-1-container {
+        position: relative;
         width: 30%;
-        top: unset;
+        align-self: flex-end;
+        padding-bottom: 5%;
+        /* top: unset;
         bottom: 2.5%;
-        right: 5%;
+        right: 5%; */
     }
 
     .weird-thing-2-container {

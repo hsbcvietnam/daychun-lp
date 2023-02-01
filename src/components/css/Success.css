@@ -25,3 +25,10 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+@media screen and (max-width: 480px) {
+    .success {
+        width: 80%;
+        padding-top: 160%;
+    }
+}
