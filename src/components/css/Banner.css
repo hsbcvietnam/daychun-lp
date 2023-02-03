@@ -136,6 +136,7 @@
 
 .follow-box-btn-disabled {
     background-color: #ffb92d;
+    font-size: 0.6em;
 }
 
 .follow-box-btn:hover {
@@ -231,7 +232,9 @@
     animation-iteration-count: infinite;
 }
 
-@media screen and (max-width: 900px) {
+
+
+@media screen and (max-width: 1200px) {
     .banner-content-container {
         width: 40%;
         margin-right: 2.5%;

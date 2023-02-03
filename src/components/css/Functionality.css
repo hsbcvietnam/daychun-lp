@@ -186,6 +186,7 @@
     font-family: 'Montserrat';
     font-size: 0.9em;
     color: #006054;
+    font-weight: 500;
 }
 
 .showcase-img {
@@ -322,19 +323,28 @@
     display: none;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
     .function-list-title {
         font-size: 1.5em;
         width: 100%;
     }
 
     .function-item-container {
-        padding: 5px;
+        margin-top: 5%;
+        padding: 10px;
         border-radius: 15px;
     }
 
     .function-showcase {
         margin-left: -2.5%;
+    }
+
+    .showcase-title {
+        width: 90%;
+    }
+
+    .showcase-content {
+        width: 90%;
     }
 
     #showcase-1 .showcase-subtitle {
@@ -373,6 +383,8 @@
     .function-list-title {
         width: 100%;
         font-size: 2em;
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
     }
 
     .hide-on-mobile {
@@ -428,11 +440,13 @@
 
     #showcase-1 .showcase-title, #showcase-1 .showcase-subtitle, #showcase-2 .showcase-title, #showcase-2 .showcase-subtitle, #showcase-3 .showcase-title, #showcase-3 .showcase-subtitle, #showcase-4 .showcase-title, #showcase-4 .showcase-subtitle {
         font-size: 1.5em;
-        line-height: 1.3em;
+        line-height: 1.5em;
     }
 
     #showcase-1 .showcase-content, #showcase-2 .showcase-content, #showcase-3 .showcase-content, #showcase-4 .showcase-content {
         line-height: 1.3em;
+        margin-top: 2.5%;
+        width: 90%;
     }
 
     #showcase-1 .showcase-img {

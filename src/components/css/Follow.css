@@ -88,7 +88,11 @@
     color: #FFFFFF;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
+    .follow-container {
+        padding-bottom: 5%;
+    }
+    
     .techhunt-logo {
         margin: 5px 0;
     }

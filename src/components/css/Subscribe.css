@@ -102,11 +102,18 @@
 
 .subscribe-follow-box-btn-disabled {
     background-color: #ffb92d;
+    font-size: 0.5em;
+}
+
+@media screen and (max-width: 1200px) {
+    .subscribe {
+        width: 30%;
+    }
 }
 
 @media screen and (max-width: 480px) {
     .subscribe {
-        width: 100vw;
+        width: 100%;
         left: 0;
         right: 0;
         bottom: 2.5%;

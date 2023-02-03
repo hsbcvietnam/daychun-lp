@@ -45,6 +45,7 @@
     font-family: 'Montserrat';
     font-size: 1em;
     color: #5F0039;
+    font-weight: 500;
 }
 
 .footer-follow-container {
@@ -54,6 +55,8 @@
 .footer-follow-text {
     font-size: 0.8em;
     margin-bottom: 5%;
+    color: #18191F;
+    font-weight: 500;
 }
 
 .footer-follow-input {
