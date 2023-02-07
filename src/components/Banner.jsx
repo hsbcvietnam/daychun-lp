@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import './css/Banner.css'
-import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser'
 
 function Banner({isSubscribed, setIsSubscribed}) {
     const [email, setEmail] = useState('')

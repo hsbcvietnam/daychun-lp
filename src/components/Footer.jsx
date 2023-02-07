@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './css/Footer.css'
 import axios from 'axios'
+import emailjs from '@emailjs/browser'
 
 function Footer({isSubscribed, setIsSubscribed}) {
   const [email, setEmail] = useState('')
@@ -32,8 +33,12 @@ function Footer({isSubscribed, setIsSubscribed}) {
           objt
         )
         .then((response) => {
-          console.log(response);
+          // console.log(response);
         });
+      const serviceID = 'default_service';
+      const templateID = 'template_zgev7fe';
+
+      emailjs.send(serviceID, templateID, { email }, 'IWcjXjd7udXOzyDD4');
       setIsSubscribed(1)
       setEmail('')
     } else {
